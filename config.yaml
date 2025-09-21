@@ -1,0 +1,29 @@
+# =========================
+# Legal Document Analyzer - Config
+# =========================
+
+# Paths for external dependencies
+tesseract_cmd: "C:/Program Files/Tesseract-OCR/tesseract.exe"   # Windows
+# tesseract_cmd: ""   # Leave empty if already in PATH (Linux/Mac)
+
+poppler_path: "C:/Program Files/poppler-24.02.0/Library/bin"    # Windows (adjust version)
+# poppler_path: ""    # Leave empty if already in PATH (Linux/Mac)
+
+# Input/output directories
+input_dir: "data/input_docs"
+output_dir: "data/output_docs"
+
+# Risk keywords (expandable)
+risk_keywords:
+  "Late Payments / Financial Penalties": "late fee|penalt(y|ies)|interest|default in payment|overdue|delayed payment"
+  "Termination & Breach": "termination|breach of contract|void|cancellation|material breach|contract violation"
+  "Confidentiality & Disclosure": "disclosure|confidential|nda|non-disclosure|trade secret"
+  "Liability & Indemnification": "liable|indemnif(y|ication)|responsibility|hold harmless|compensation liability"
+  "Intellectual Property Risks": "intellectual property|copyright|patent|trademark|IP rights|proprietary|design rights"
+  "Dispute Resolution (Indian Context)": "arbitration|jurisdiction|venue|dispute resolution|litigation|mediation|conciliation"
+  "Damages & Remedies": "damages|compensation|losses|remedies|consequential damages|punitive damages|specific performance"
+  "Defamation / Reputation": "defamation|reputation|libel|slander|character assassination"
+  "Automatic Renewal": "auto-?renewal|automatic renewal|renewal term|extension of contract"
+  "Legal Fees & Costs": "advocate fees|legal fees|court costs|litigation expenses"
+  "Employment / Labour Risks": "non-compete|non compete|non-solicit|non solicit|employee|employment|labour|industrial dispute"
+  "Governing Law / Jurisdiction (India)": "governing law|laws of India|Indian Penal Code|IPC|jurisdiction of.*India|court of.*India|Supreme Court|High Court|Arbitration and Conciliation Act"

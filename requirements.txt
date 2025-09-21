@@ -1,0 +1,14 @@
+spacy
+pdfplumber
+sumy
+reportlab
+google-generativeai
+langchain
+langchain-community
+langchain-openai
+langchain_google_genai
+pypdf
+pdf2image 
+pytesseract 
+Pillow
+streamlit
